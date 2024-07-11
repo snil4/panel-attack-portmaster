@@ -77,14 +77,14 @@ config = {
 
     -- True if we immediately want to maximize the screen on startup
     maximizeOnStartup             = true,
-    gameScaleType                 = "auto",
-    gameScaleFixedValue           = 2,
+    gameScaleType                 = "fixed",
+    gameScaleFixedValue           = 1,
 
     -- Love configuration variables
     windowWidth                   = consts.CANVAS_WIDTH,
     windowHeight                  = consts.CANVAS_HEIGHT,
     borderless                    = false,
-    fullscreen                    = false,
+    fullscreen                    = true,
     display                       = 1,
     windowX                       = nil,
     windowY                       = nil,
