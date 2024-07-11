@@ -64,7 +64,7 @@ local Game = class(
     -- depends on canvasXScale
     self.global_canvas = love.graphics.newCanvas(consts.CANVAS_WIDTH, consts.CANVAS_HEIGHT, {dpiscale=newCanvasSnappedScale(self)})
 
-    self.availableScales = {1, 1.5, 2, 2.5, 3}
+    self.availableScales = {0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.5, 2, 2.5, 3}
     -- specifies a time that is compared against self.timer to determine if GameScale should be shown
     self.showGameScaleUntil = 0
     self.needsAssetReload = false
