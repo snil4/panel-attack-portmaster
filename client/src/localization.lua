@@ -42,11 +42,11 @@ function Localization.set_language(self, lang_code)
   if themes[config.theme] and themes[config.theme].font and themes[config.theme].font.path then
     GraphicsUtil.setGlobalFont(themes[config.theme].font.path, themes[config.theme].font.size)
   elseif config.language_code == "JP" then
-    GraphicsUtil.setGlobalFont("client/assets/fonts/jp.ttf", 14)
+    GraphicsUtil.setGlobalFont("client/assets/fonts/jp.ttf", 28)
   elseif config.language_code == "TH" then
-    GraphicsUtil.setGlobalFont("client/assets/fonts/th.otf", 14)
+    GraphicsUtil.setGlobalFont("client/assets/fonts/th.otf", 28)
   else
-    GraphicsUtil.setGlobalFont(nil, 12)
+    GraphicsUtil.setGlobalFont(nil, 26)
   end
 
   self:refresh_global_strings()
